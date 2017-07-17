@@ -1,0 +1,123 @@
+/*common*/
+li {
+    list-style-type: none;
+}
+/*header*/
+header {
+    height: 64px;
+}
+
+/*main*/
+/*ナビゲーション部分*/
+nav {
+    background: #696969;
+    font-size: 0;
+}
+nav.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    /*z-index: 0;*/
+    width: 100%;
+}
+nav li {
+    display: inline-block;
+}
+nav li.selected {
+    border-bottom: solid 2px #fff;
+}
+nav a {
+    display: inline-block;
+    user-select: none;
+    text-decoration: none;
+    cursor: pointer;
+    color: #ccc;
+    padding: 10px 10px;
+    font-size: 14px;
+}
+nav li a:not(.selected):hover {
+    color: #fff;
+}
+nav a.selected {
+    color: #fff;
+    cursor: default;
+}
+#top {
+    height: 500px;
+    background: #eee;
+    margin-bottom: 30px;
+}
+
+
+div.headline {
+    width: 1000px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    overflow: hidden;
+}
+div.headlineContent {
+    float: left;
+    width: 280px;
+    margin-right: 80px;
+}
+div.headline div:last-child {
+    margin-right: 0;
+    float: right;
+}
+div.headline p {
+    color: #666;
+}
+
+
+div.about {
+    width: 1000px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    margin-top: 50px;
+}
+div.about div {
+    margin: 0 auto;
+}
+.aboutContent {
+    width: 600px;
+    margin: 0 auto 30px;
+    text-align: left;
+}
+#aboutImg {
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+.leftside {
+    float: left;
+}
+.rightside {
+    float: right;
+}
+.righttop {
+    margin-bottom: 25px;
+}
+.policy {
+    width: 500px;
+    height: 300px;
+    /*padding: 0 10px;*/
+    float: left;
+}
+.policy p {
+    width: 300px;
+    margin: 0 auto;
+}
+#policy {
+    overflow: hidden;
+}
+
+.person img {
+    border-radius: 50%;
+}
+
+.movie {
+    width: 15%;
+    height: 15%;
+}
+/*footer*/
