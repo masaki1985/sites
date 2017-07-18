@@ -162,27 +162,44 @@ div.about div {
 }
 
 /*movie*/
-
-.movie {
-    width: 160px;
-    height: 90px;
-    filter: brightness(50%);
+#movie {
+    width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    overflow: hidden;
 }
-
+.thumbnail {
+    height: 90%;
+    filter: brightness(70%);
+    cursor: pointer;
+}
 .movieContent {
     position: relative;
-    border: 1px solid black;
-    width: 160px;
-    height: 90px;
+    width: 320px;
+    height: 180px;
 }
 .movieIcon {
-    font-size: 32px;
+    font-size: 48px;
     position: absolute;
-    top: 35px;
-    right: 70px;
+    top: 60px;
+    right: 140px;
     color: #ccc;
+    cursor: pointer;
+}
+.hidden {
+    display: none;
+}
+.movie {
+    float: left;
+}
+#prev, #next {
+    font-size: 24px;
+    margin-top: 70px;
+    color: #007a87;
+    cursor: pointer;
 }
 
+/*application*/
 #application {
     background: #007a87;
     color: #fff;
@@ -192,4 +209,5 @@ div.about div {
 .treatment {
     /*float: left;*/
 }
+
 /*footer*/
