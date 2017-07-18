@@ -8,7 +8,7 @@ header {
 }
 
 /*main*/
-/*ナビゲーション部分*/
+/*nav*/
 nav {
     background: #696969;
     font-size: 0;
@@ -48,7 +48,7 @@ nav a.selected {
     margin-bottom: 30px;
 }
 
-
+/*headline*/
 div.headline {
     width: 1000px;
     margin-right: auto;
@@ -69,7 +69,7 @@ div.headline p {
     color: #666;
 }
 
-
+/*about*/
 div.about {
     width: 1000px;
     margin-right: auto;
@@ -101,7 +101,6 @@ div.about div {
 .policy {
     width: 500px;
     height: 300px;
-    /*padding: 0 10px;*/
     float: left;
 }
 .policy p {
@@ -115,6 +114,54 @@ div.about div {
 .person img {
     border-radius: 50%;
 }
+
+/*introduce*/
+#introduce {
+    width: 1100px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    margin-top: 50px;
+}
+.introduceContent {
+    width: 600px;
+    margin: 0 auto 30px;
+    text-align: left;
+}
+#people p {
+    color: #999;
+}
+#people p span {
+    color: #666;
+}
+.person {
+    width: 550px;
+    height: 180px;
+    float: left;
+}
+.person img {
+    width: 15%;
+    margin: 20px 30px;
+    float: left;
+}
+.person p {
+    width: 350px;
+    text-align: left;
+    padding: 30px 20px;
+    overflow: hidden;
+    float: left;
+    border: 1px solid #eee;
+}
+#others p {
+    width: 600px;
+    padding-top: 20px;
+    margin: 100px auto;
+    color: #666;
+    text-align: left;
+    overflow: hidden;
+}
+
+/*movie*/
 
 .movie {
     width: 160px;
@@ -133,9 +180,16 @@ div.about div {
     position: absolute;
     top: 35px;
     right: 70px;
-    /*margin: auto auto;*/
     color: #ccc;
 }
 
-
+#application {
+    background: #007a87;
+    color: #fff;
+    margin: 0 auto;
+    text-align: center;
+}
+.treatment {
+    /*float: left;*/
+}
 /*footer*/
