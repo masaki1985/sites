@@ -17,7 +17,7 @@ nav.fixed {
     position: fixed;
     top: 0;
     left: 0;
-    /*z-index: 0;*/
+    z-index: 1;
     width: 100%;
 }
 nav li {
@@ -117,7 +117,25 @@ div.about div {
 }
 
 .movie {
-    width: 15%;
-    height: 15%;
+    width: 160px;
+    height: 90px;
+    filter: brightness(50%);
 }
+
+.movieContent {
+    position: relative;
+    border: 1px solid black;
+    width: 160px;
+    height: 90px;
+}
+.movieIcon {
+    font-size: 32px;
+    position: absolute;
+    top: 35px;
+    right: 70px;
+    /*margin: auto auto;*/
+    color: #ccc;
+}
+
+
 /*footer*/
