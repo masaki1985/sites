@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/font-awesome.min.css">    
     <link rel="stylesheet" href="css/top.css">
     <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/top.js"></script>
+    <!--<script src="js/top.js"></script>-->
 </head>
 <body>
     <header>
@@ -36,15 +36,15 @@
             </ul>
         </nav>
 
-        <!--classをidに直す-->
-        <div class="image">
+        <div id="headerImage">
             <!--トップ画像-->
-            <div id="top"></div>
+            <div id="top">
+                <!--<img src="img/header.png" alt="">-->
+            </div>
         </div>
 
 
-        <!--classをidに直す-->
-        <div class="headline">
+        <div id="headline">
             <div class="headlineContent">
                 <img src="img/Create.png" alt="">
                 <h4>Create</h4>
@@ -63,8 +63,7 @@
         </div>
 
 
-        <!--classをidに直す-->
-        <div class="about">
+        <div id="about">
             <div>
                 <h2>Airbnbで「一緒に」</h2>
             </div>
@@ -157,8 +156,8 @@
 
         <div id="movie">
             <h2>当社では人材を大切にします</h2>
+            <i class="fa fa-chevron-left movie" aria-hidden="true" id="prev"></i>
             <div id="firstFrame" class="moviesFrame">
-                <i class="fa fa-chevron-left movie" aria-hidden="true" id="prev"></i>
                 <div class="movie">
                     <div class="movieContent">
                         <img src="img/movie1.jpg" class="thumbnail">
@@ -180,7 +179,6 @@
                     </div>
                     <h4>私の親について</h4>
                 </div>
-                <i class="fa fa-chevron-right movie" aria-hidden="true" id="next"></i>
             </div>
             <div id="secondFrame" class="moviesFrame hidden">
                 <div class="movie">
@@ -205,10 +203,8 @@
                     <h4>ホスト</h4>
                 </div>
             </div>
+            <i class="fa fa-chevron-right movie" aria-hidden="true" id="next"></i>
             <!--<iframe width="560" height="315" src="https://www.youtube.com/embed/jpxInV9es6M" frameborder="0" allowfullscreen></iframe>-->
-            <!--<video>
-                <source src="https://www.youtube.com/embed/jpxInV9es6M">
-            </video>-->
         </div>
 
 
@@ -281,6 +277,8 @@
             </div>
         </div>
         <hr>
+
+
         <div id="footerLower">
             <div id="copyright">©️Airbnb, Inc.</div>
             <div>
@@ -295,5 +293,6 @@
             </div>
         </div>
     </footer>
+    <script src="js/top.js"></script>
 </body>
 </html>

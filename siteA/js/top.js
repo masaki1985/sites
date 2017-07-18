@@ -45,3 +45,37 @@ $(function() {
         }
     });
 });
+
+// test
+// ムービーの切り替え
+(function() {
+    'use strict';
+
+    let prev = document.getElementById('prev');
+    let next = document.getElementById('next');
+    let firstFrame = document.getElementById('firstFrame');
+    let secondFrame = document.getElementById('secondFrame');
+    
+    prev.addEventListener('click', function() {
+        if(firstFrame.className.indexOf('hidden')) {
+            firstFrame.className = 'hidden';
+            secondFrame.className = '';
+        }
+        else {
+            firstFrame.className = '';
+            secondFrame.className = 'hidden';
+        }
+    });
+
+    next.addEventListener('click', function() {
+        if(firstFrame.className.indexOf('hidden')) {
+            firstFrame.className = 'hidden';
+            secondFrame.className = '';
+        }
+        else {
+            firstFrame.className = '';
+            secondFrame.className = 'hidden';
+        }
+    })
+
+})();

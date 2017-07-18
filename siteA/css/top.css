@@ -15,9 +15,10 @@ header ul {
 header ul li {
     display: inline-block;
     margin-right: 30px;
+    font-size: 14px;
 }
 #headerRightSide {
-    color: #666;
+    color: #999;
     height: 64px;
     line-height: 64px;
     float: right;
@@ -61,42 +62,55 @@ nav a.selected {
 nav li:first-child {
     margin-left: 80px;
 }
+
+#headerImage {
+    margin-bottom: 30px;
+}
 #top {
     height: 500px;
     background: #eee;
-    margin-bottom: 30px;
+    text-align: center;
+    margin-bottom: 0 auto 30px;
+    background-image: url('../img/header.png');
+    background-size: 1500px 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#top img {
+    height: 100%;
+    width: 1450px;
+    margin: 0 auto;
 }
 
 /*headline*/
-div.headline {
+#headline {
     width: 1000px;
-    margin-right: auto;
-    margin-left: auto;
+    margin: 0 auto 100px;
     text-align: center;
     overflow: hidden;
 }
-div.headlineContent {
+.headlineContent {
     float: left;
     width: 280px;
     margin-right: 80px;
 }
-div.headline div:last-child {
+#headline div:last-child {
     margin-right: 0;
     float: right;
 }
-div.headline p {
+#headline p {
     color: #666;
 }
 
 /*about*/
-div.about {
+#about {
     width: 1000px;
     margin-right: auto;
     margin-left: auto;
     text-align: center;
     margin-top: 50px;
 }
-div.about div {
+#about div {
     margin: 0 auto;
 }
 .aboutContent {
@@ -106,7 +120,7 @@ div.about div {
 }
 #aboutImg {
     overflow: hidden;
-    margin-bottom: 50px;
+    padding-bottom: 50px;
 }
 .leftside {
     float: left;
@@ -119,11 +133,11 @@ div.about div {
 }
 .policy {
     width: 500px;
-    height: 300px;
+    height: 200px;
     float: left;
 }
 .policy p {
-    width: 300px;
+    width: 350px;
     margin: 0 auto;
 }
 #policy {
@@ -232,7 +246,7 @@ div.about div {
 }
 #application li {
     margin-bottom: 15px;
-    font-size: 12px;
+    font-size: 13px;
 }
 #applicationContents {
     width: 900px;
