@@ -6,6 +6,22 @@ li {
 header {
     height: 64px;
 }
+header img {
+    float: left;
+}
+header ul {
+    margin: 0;
+}
+header ul li {
+    display: inline-block;
+    margin-right: 30px;
+}
+#headerRightSide {
+    color: #666;
+    height: 64px;
+    line-height: 64px;
+    float: right;
+}
 
 /*main*/
 /*nav*/
