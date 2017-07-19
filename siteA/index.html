@@ -7,21 +7,28 @@
     <link rel="stylesheet" href="css/font-awesome.min.css">    
     <link rel="stylesheet" href="css/top.css">
     <script src="js/jquery-3.2.1.min.js"></script>
-    <!--<script src="js/top.js"></script>-->
 </head>
+
 <body>
     <header>
         <div>
-            <div>
-                <img src="img/company.png" alt="">
-            </div>
-            <div id="headerRightSide">
-                <ul>
-                    <li>ホストになる</li>
-                    <li>ヘルプ</li>
-                    <li>アカウント作成</li>
-                    <li>ログイン</li>
-                </ul>
+            <img src="img/company.png" alt="">
+        </div>
+        <div id="headerRightSide">
+            <ul>
+                <li id="host">ホストになる</li>
+                <li>ヘルプ</li>
+                <li>アカウント作成</li>
+                <li id="login-open">ログイン</li>
+            </ul>
+        </div>
+        <!--<div id="tooltip">
+            <p>Kichijoji-honchoのご自宅をシェアすることで毎週¥22,409の<br>
+                収入が得られます。ホストになりましょう。
+        </div>-->
+        <div id="modal-content">
+            <div id="login-close" class="button-link">
+                <p>閉じる</p>
             </div>
         </div>
     </header>
@@ -36,10 +43,10 @@
             </ul>
         </nav>
 
+
+        <!--トップ画像-->
         <div id="headerImage">
-            <!--トップ画像-->
             <div id="top">
-                <!--<img src="img/header.png" alt="">-->
             </div>
         </div>
 

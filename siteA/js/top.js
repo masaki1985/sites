@@ -1,3 +1,45 @@
+// ログイン押下時のモーダルウィンドウオープン
+$(function() {
+    let login = $('#login-open');
+    let content = $('#modal-content');
+    let overlay;
+
+    login.click(function() {
+        $('body').append('<div id="modal-overlay"></div>');
+        let overlay = $('#modal-overlay');
+
+        centeringModal();
+        overlay.show();
+        content.show();
+    });
+
+    // モーダルを画面中央に表示する
+    function centeringModal() {
+        let windowWidth = $(window).width();
+        let windowHeight = $(window).height();
+
+        let modalWidth = content.outerWidth();
+        let modalHeight = content.outerHeight();
+        
+        let left = ((windowWidth - modalWidth) / 2);
+        let top = ((windowHeight - modalHeight) / 2);
+ 
+        content.css({
+            "left": left + "px",
+            "top": top + "px"
+        });   
+    }
+
+});
+
+// ログインのモーダルウィンドウクローズ
+$(function() {
+    $('#login-close').unbind().click(function() {
+        $('#modal-content').hide();
+        $('#modal-overlay').remove();
+    });
+})
+
 // ナビゲーションの表示切替え
 $(function() {
     $('nav').each(function() {
