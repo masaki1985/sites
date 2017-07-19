@@ -1,3 +1,28 @@
+// ホストマウスオーバー時にツールチップ表示
+$(function() {
+    let host = $('#host');
+    let balloon = $('<div class="balloon"></div>').appendTo('body');
+    let text = host.attr('title');
+
+    host.hover(function() {
+        let position = host.offset();
+        let posTop = position.top;
+        let posLeft = position.left;
+
+        let element = $(this);
+        
+        element.attr('title', '');
+        balloon.text(text);
+        balloon.css({
+            top: posTop + 63,
+            left: posLeft - 50
+        })
+        balloon.show();
+    }, function() {
+        balloon.hide();
+    });
+});
+
 // ログイン押下時のモーダルウィンドウオープン
 $(function() {
     let login = $('#login-open');
@@ -87,37 +112,3 @@ $(function() {
         }
     });
 });
-
-// test
-// ムービーの切り替え
-(function() {
-    'use strict';
-
-    let prev = document.getElementById('prev');
-    let next = document.getElementById('next');
-    let firstFrame = document.getElementById('firstFrame');
-    let secondFrame = document.getElementById('secondFrame');
-    
-    prev.addEventListener('click', function() {
-        if(firstFrame.className.indexOf('hidden')) {
-            firstFrame.className = 'hidden';
-            secondFrame.className = '';
-        }
-        else {
-            firstFrame.className = '';
-            secondFrame.className = 'hidden';
-        }
-    });
-
-    next.addEventListener('click', function() {
-        if(firstFrame.className.indexOf('hidden')) {
-            firstFrame.className = 'hidden';
-            secondFrame.className = '';
-        }
-        else {
-            firstFrame.className = '';
-            secondFrame.className = 'hidden';
-        }
-    })
-
-})();

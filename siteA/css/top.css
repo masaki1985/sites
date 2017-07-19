@@ -6,7 +6,6 @@ li {
 /*header*/
 header {
     height: 64px;
-    overflow: hidden;
 }
 header img {
     float: left;
@@ -26,18 +25,21 @@ header li {
     line-height: 64px;
     float: right;
 }
+#headerContents {
+    overflow: hidden;
+    position: relative;
+}
+
 /*header host tooltip*/
 #host {
     cursor: pointer;
 }
-#tooltip {
-    top: 200px;
-    /*width: 100px;*/
-    /*height: 30px;*/
-    /*border: #aaa;*/
-    /*background: #fff;*/
-    border: 1px solid black;
-    z-index: 3;
+.balloon{
+	background:#fff;
+    color:#aaa;
+	padding:10px;
+	position:absolute;
+    border: 1px solid #aaa;
 }
 /*header login modal*/
 #modal-content {
